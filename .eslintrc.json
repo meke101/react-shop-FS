@@ -1,0 +1,33 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": "warn", // Ensures prettier issues are shown as errors
+    "react/prop-types": "off", // Example to turn off prop-types rule, adjust as necessary
+    "no-unused-vars": "warn",
+    "react/jsx-key": "off"
+  },
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
